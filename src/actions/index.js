@@ -1,6 +1,3 @@
-const incrementCount = { type: 'INCREMENT' }
-const decrementCount = { type: 'DECREMENT' }
-
 const knockR = (isPlus = true) => {
   if (isPlus) {
     return { type: 'INCR_R' }
@@ -26,8 +23,6 @@ const knockB = (isPlus = true) => {
 }
 
 export default {
-  incrementCount,
-  decrementCount,
   knockR,
   knockG,
   knockB

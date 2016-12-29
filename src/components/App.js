@@ -11,17 +11,14 @@ class App extends Component {
   }
 
   onKnockR(isPlus) {
-    this.props.dispatch(actions.incrementCount)
     this.props.dispatch(actions.knockR(isPlus))
   }
 
   onKnockG(isPlus) {
-    this.props.dispatch(actions.incrementCount)
     this.props.dispatch(actions.knockG(isPlus))
   }
 
   onKnockB(isPlus) {
-    this.props.dispatch(actions.incrementCount)
     this.props.dispatch(actions.knockB(isPlus))
   }
 
