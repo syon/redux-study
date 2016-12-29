@@ -1,4 +1,6 @@
-const color = (state = {r: 255, g: 150, b: 75}, action) => {
+const initialState = {r: 255, g: 150, b: 75}
+
+const color = (state = initialState, action) => {
   switch (action.type) {
     case 'HIT_INCR_R':
       return Object.assign({}, state, {
@@ -24,6 +26,8 @@ const color = (state = {r: 255, g: 150, b: 75}, action) => {
       return Object.assign({}, state, {
         b: state.b <= 0 ? 255 : state.b - 15
       })
+    case 'RESET':
+      return initialState
     default:
       return state
   }

@@ -28,3 +28,17 @@ button {
   height: 30px;
   margin: 5px 0;
 }
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+}
+
+.reset button {
+  width: 120px;
+  height: 30px;
+  margin: 5px auto;
+  display: block;
+}

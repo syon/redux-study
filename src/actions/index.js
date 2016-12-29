@@ -22,8 +22,11 @@ const hitB = (isPlus = true) => {
   }
 }
 
+const hitReset = { type: 'RESET' }
+
 export default {
   hitR,
   hitG,
-  hitB
+  hitB,
+  hitReset
 }

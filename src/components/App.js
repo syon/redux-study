@@ -22,15 +22,16 @@ class App extends Component {
     this.props.dispatch(actions.hitB(isPlus))
   }
 
+  onHitReset() {
+    this.props.dispatch(actions.hitReset)
+  }
+
   render() {
     const { color, count } = this.props
     return (
       <div className="app">
         <ColorBox color={color}></ColorBox>
         <div className="row">
-          <div className="col">
-            <CountBox count={count}></CountBox>
-          </div>
           <div className="col">
             <button onClick={() => this.onHitR(true )}>R+</button>
             <button onClick={() => this.onHitR(false)}>R-</button>
@@ -42,6 +43,14 @@ class App extends Component {
           <div className="col">
             <button onClick={() => this.onHitB(true )}>B+</button>
             <button onClick={() => this.onHitB(false)}>B-</button>
+          </div>
+        </div>
+        <div className="row">
+          <div className="count">
+            <CountBox count={count}></CountBox>
+          </div>
+          <div className="reset">
+            <button onClick={() => this.onHitReset()}>RESET</button>
           </div>
         </div>
       </div>
