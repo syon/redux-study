@@ -4,6 +4,7 @@ import CountBox from './CountBox'
 
 class App extends Component {
   static propTypes = {
+    color: PropTypes.object.isRequired,
     count: PropTypes.number.isRequired,
     onKnockR: PropTypes.func.isRequired,
     onKnockG: PropTypes.func.isRequired,
