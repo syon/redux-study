@@ -10,39 +10,23 @@ class App extends Component {
     count: PropTypes.number.isRequired
   }
 
-  onHitR(isPlus) {
-    this.props.dispatch(actions.hitR(isPlus))
-  }
-
-  onHitG(isPlus) {
-    this.props.dispatch(actions.hitG(isPlus))
-  }
-
-  onHitB(isPlus) {
-    this.props.dispatch(actions.hitB(isPlus))
-  }
-
-  onHitReset() {
-    this.props.dispatch(actions.hitReset)
-  }
-
   render() {
-    const { color, count } = this.props
+    const { color, count, dispatch } = this.props
     return (
       <div className="app">
         <ColorBox color={color}></ColorBox>
         <div className="row">
           <div className="col">
-            <button onClick={() => this.onHitR(true )}>R+</button>
-            <button onClick={() => this.onHitR(false)}>R-</button>
+            <button onClick={() => dispatch(actions.hitR(true))}>R+</button>
+            <button onClick={() => dispatch(actions.hitR(false))}>R-</button>
           </div>
           <div className="col">
-            <button onClick={() => this.onHitG(true )}>G+</button>
-            <button onClick={() => this.onHitG(false)}>G-</button>
+            <button onClick={() => dispatch(actions.hitG(true))}>G+</button>
+            <button onClick={() => dispatch(actions.hitG(false))}>G-</button>
           </div>
           <div className="col">
-            <button onClick={() => this.onHitB(true )}>B+</button>
-            <button onClick={() => this.onHitB(false)}>B-</button>
+            <button onClick={() => dispatch(actions.hitB(true))}>B+</button>
+            <button onClick={() => dispatch(actions.hitB(false))}>B-</button>
           </div>
         </div>
         <div className="row">
@@ -50,7 +34,7 @@ class App extends Component {
             <CountBox count={count}></CountBox>
           </div>
           <div className="reset">
-            <button onClick={() => this.onHitReset()}>RESET</button>
+            <button onClick={() => dispatch(actions.hitReset)}>RESET</button>
           </div>
         </div>
       </div>
