@@ -1,5 +1,5 @@
 const count = (state = 0, action) => {
-  if (action.type) {
+  if (/^HIT/.test(action.type)) {
     return state + 1
   } else {
     return state

@@ -1,29 +1,29 @@
-const knockR = (isPlus = true) => {
+const hitR = (isPlus = true) => {
   if (isPlus) {
-    return { type: 'INCR_R' }
+    return { type: 'HIT_INCR_R' }
   } else {
-    return { type: 'DECR_R' }
+    return { type: 'HIT_DECR_R' }
   }
 }
 
-const knockG = (isPlus = true) => {
+const hitG = (isPlus = true) => {
   if (isPlus) {
-    return { type: 'INCR_G' }
+    return { type: 'HIT_INCR_G' }
   } else {
-    return { type: 'DECR_G' }
+    return { type: 'HIT_DECR_G' }
   }
 }
 
-const knockB = (isPlus = true) => {
+const hitB = (isPlus = true) => {
   if (isPlus) {
-    return { type: 'INCR_B' }
+    return { type: 'HIT_INCR_B' }
   } else {
-    return { type: 'DECR_B' }
+    return { type: 'HIT_DECR_B' }
   }
 }
 
 export default {
-  knockR,
-  knockG,
-  knockB
+  hitR,
+  hitG,
+  hitB
 }

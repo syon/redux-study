@@ -10,16 +10,16 @@ class App extends Component {
     count: PropTypes.number.isRequired
   }
 
-  onKnockR(isPlus) {
-    this.props.dispatch(actions.knockR(isPlus))
+  onHitR(isPlus) {
+    this.props.dispatch(actions.hitR(isPlus))
   }
 
-  onKnockG(isPlus) {
-    this.props.dispatch(actions.knockG(isPlus))
+  onHitG(isPlus) {
+    this.props.dispatch(actions.hitG(isPlus))
   }
 
-  onKnockB(isPlus) {
-    this.props.dispatch(actions.knockB(isPlus))
+  onHitB(isPlus) {
+    this.props.dispatch(actions.hitB(isPlus))
   }
 
   render() {
@@ -32,16 +32,16 @@ class App extends Component {
             <CountBox count={count}></CountBox>
           </div>
           <div className="col">
-            <button onClick={() => this.onKnockR(true )}>R+</button>
-            <button onClick={() => this.onKnockR(false)}>R-</button>
+            <button onClick={() => this.onHitR(true )}>R+</button>
+            <button onClick={() => this.onHitR(false)}>R-</button>
           </div>
           <div className="col">
-            <button onClick={() => this.onKnockG(true )}>G+</button>
-            <button onClick={() => this.onKnockG(false)}>G-</button>
+            <button onClick={() => this.onHitG(true )}>G+</button>
+            <button onClick={() => this.onHitG(false)}>G-</button>
           </div>
           <div className="col">
-            <button onClick={() => this.onKnockB(true )}>B+</button>
-            <button onClick={() => this.onKnockB(false)}>B-</button>
+            <button onClick={() => this.onHitB(true )}>B+</button>
+            <button onClick={() => this.onHitB(false)}>B-</button>
           </div>
         </div>
       </div>
