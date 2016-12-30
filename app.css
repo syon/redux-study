@@ -1,0 +1,44 @@
+.app {
+  width: 250px;
+  margin: 15px auto;
+}
+
+.colorBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  width: 40px;
+  height: 30px;
+  margin: 5px 0;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+}
+
+.reset button {
+  width: 120px;
+  height: 30px;
+  margin: 5px auto;
+  display: block;
+}
