@@ -1,5 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+}
+
 .app {
-  width: 250px;
+  width: 100vmin;
+  max-width: 320px;
   margin: 15px auto;
 }
 
@@ -7,8 +17,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 320px;
+  font-size: 24px;
 }
 
 .row {
