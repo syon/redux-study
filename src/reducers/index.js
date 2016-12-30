@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import count from './Count'
-import color from './Color'
+import countReducer from './CountReducer'
+import colorReducer from './ColorReducer'
 
 export default combineReducers({
-  count,
-  color
+  count: countReducer,
+  color: colorReducer
 })
